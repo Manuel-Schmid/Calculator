@@ -1,11 +1,16 @@
 <body>
     <div class="calc-container">
-        <div class="calc-container-input">{{ calculation }}</div>
+        <div class="calc-container-input" [innerHTML]="displayCalc"></div>
         <div class="calc-container-result">{{ result }}</div>
         <div class="buttons">
             <button class="green button ac" (click)="allClear()">AC</button>
             <button class="green button del" (click)="delete()">del</button>
+            <button class="black button" (click)="addPiToCalc()">π</button>
             <button class="black button" (click)="addOperationToCalc('/')">/</button>
+            <button class="black button" (click)="addNumToCalc('(')">(</button>
+            <button class="black button" (click)="addNumToCalc(')')">)</button>
+            <button class="black button" (click)="addSquareToCalc()">x<sup>2</sup></button>
+            <button class="black button" (click)="addSquareRootToCalc()"><sup>2</sup>&radic;</button>
             <button class="black button" (click)="addNumToCalc('7')">7</button>
             <button class="black button" (click)="addNumToCalc('8')">8</button>
             <button class="black button" (click)="addNumToCalc('9')">9</button>
@@ -21,6 +26,7 @@
             <button class="black button zero" (click)="addNumToCalc('0')">0</button>
             <button class="black button" (click)="addNumToCalc('.')">.</button>
             <button class="green button" (click)="getResult()">=</button>
+            
         </div>
     </div>
 </body>

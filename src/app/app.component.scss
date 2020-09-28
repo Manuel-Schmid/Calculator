@@ -21,7 +21,7 @@
     &-result {
         font-size: 38px;
         font-weight: bold;
-        height: 100px;
+        height: 65px;
         text-align: end;
         margin-right: 20px;
         margin-left: 20px;
@@ -41,8 +41,9 @@
     text-align: center;
     padding: 20px;
     font-size: 20px;
-    border-radius: 0px;
-    border-color: black;
+    border: none;
+    background: none;
+    outline: none;
     cursor: pointer;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .ac {
-    grid-column: span 2;
+    grid-column: span 1;
     border-right-color: green;
 }
 
@@ -75,5 +76,7 @@
     border-color: rgb(95, 95, 95);
 }
      
-
+sup {
+    font-size: 12px;
+}
 
