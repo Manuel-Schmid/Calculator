@@ -50,6 +50,11 @@
 .button:hover {
     background-color: rgb(95, 95, 95);
     border-color: rgb(95, 95, 95);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .ac {
@@ -69,13 +74,18 @@
     background-color: black;
 }
 .green {
-    background-color: green;
-    border-color: green;
+    background-color: #e7043c;
+    border-color: #e7043c;
 }
 .green:hover {
     border-color: rgb(95, 95, 95);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
-     
+
 sup {
     font-size: 12px;
 }
